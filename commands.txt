@@ -1,0 +1,144 @@
+k  585  ls
+  586  cat ~/.ssh/id_ed25519.pub
+  587  mkdir -p mykey
+  588  ls
+  589  pwd
+  590  ssh-keygen -t ed25519 -f ~/703/my_keys/my_key_1 
+  591  ls
+  592  ssh-keygen -t ed25519 -f ~/703/Lab-09/my_keys/my_key_1 
+  593  pwd
+  594  ssh-keygen -t ed25519 -f ~/703/Lab-09/mykey/mykey_1 
+  595  ls
+  596  cat mykey/mykey_1
+  597  ls-a  mykey/
+  598  ls -a  mykey/
+  599  cat mykey/mykey_1.pub
+  600  ls
+  601  git clone https://github.com/syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  602  ls
+  603  cd devops-lab-9-CI-CD_pipelines/
+  604  ls
+  605  mkdir -p .github/workflows
+  606  ls
+  607  git status
+  608  git remote -v
+  609  ls -la
+  610  nano firstfile.txt
+  611  git status
+  612  cp ../demo-cicd-workflows/firstworkflow.yml .
+  613  ls
+  614  cp ../demo-cicd-workflows/firstworkflow.yml ./.github/workflows
+  615  rm firstworkflow.yml 
+  616  ls
+  617  cat ./github/workflows/firstworkflow.yml
+  618  ls ./github/workflows/
+  619  cd .github
+  620  ls
+  621  cd workflows/
+  622  ls
+  623  cat workflows
+  624  nano firstworkflow.yml
+  625  git status
+  626  cd ..
+  627  git status
+  628  git config --list
+  629  git config --local --list
+  630  git config --system --list
+  631  git config --local user.name flanashah
+  632  git config --local user.email zs3783999@gmail.com
+  633  git config --local --list
+  634  git status
+  635  git add .
+  636  git status
+  637  ls
+  638  cd ..
+  639  ls
+  640  cd demo-cicd-workflows/
+  641  cat firstworkflow.yml 
+  642  cd devo
+  643  cd dev
+  644  ls
+  645  cd ..
+  646  cd devops-lab-9-CI-CD_pipelines/
+  647  git commit -m "first commit setup"
+  648  git log
+  649  git push origin main 
+  650  git remote add origin2 git@github.com:syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  651  git remote -v
+  652  git push origin2 main
+  653  git status
+  654  ls
+  655  ls -a
+  656  git add .
+  657  git status
+  658  ls
+  659  git log
+  660  ls
+  661  git add .
+  662  git commit -m "2nd setup"
+  663  ssh -T git@github.com
+  664  git remote set-url origin2 https://github.com/syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  665  ssh -T git@github.com
+  666  git remote -v
+  667  git push origin2 main
+  668  ssh -T git@github.com
+  669  ls ~/.ssh
+  670  git remote -v
+  671  ls
+  672  cd ..
+  673  ls
+  674  cd mykey/
+  675  ls -la
+  676  nano ~/.ssh/config
+  677  git remote set-url origin git@github-syed:syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  678  git remote set-url origin2 git@github-syed:syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  679  git remote -v
+  680  ssh -T git@github-syed
+  681  cat ~/.ssh/config
+  682  chmod 600 ~/703/Lab-09/mykey/mykey_1
+  683  nano ~/.ssh/config
+  684  cat ~/.ssh/config
+  685  ssh -T git@github-syed
+  686  git status
+  687  git add .
+  688  git status
+  689  ls
+  690  cd ..
+  691  ls
+  692  cd devops-lab-9-CI-CD_pipelines/
+  693  ls
+  694  git status
+  695  git add .
+  696  git status
+  697  git remote -v
+  698  git push origin2 main
+  699  ssh -T git@github-syed
+  700  git remote set-url origin git@github-syed:syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  701  git remote set-url origin2 git@github-syed:syedzohaibshah/devops-lab-9-CI-CD_pipelines.git
+  702  git remote -v
+  703  git push origin main
+  704  ls 
+  705  ls -la
+  706  ls .github/workflows/
+  707  cat .github/workflows/firstworkflow.yml
+  708  git add .
+  709  git commit -m "fix workflow"
+  710  git push origin2 main~
+  711  git push origin2 main
+  712  ls
+  713  nano secondfile.py
+  714  nano secondfile.txt
+  715  ls
+  716  ls ../
+  717  cp ../demo-cicd-workflows/second-workflow.yml ./.github/workflows/
+  718  ls ./.github/workflows/
+  719  git add .
+  720  git commit -m "second workflow"
+  721  git push origin2 main
+  722  nano  ./.github/workflows/second-workflow.yml 
+  723  git add .
+  724  git commit -m "updated 2nd workflow"
+  725  git push origin2 main
+  726  nano  ./.github/workflows/second-workflow.yml 
+  727  history
+  728  history | tee commands.txt
